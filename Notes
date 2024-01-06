@@ -1,0 +1,40 @@
+
+               LECTURE 2 NOTES   
+
+
+All the libraries that we need , all the utilities that we need come from npm
+
+
+NPM :- Its a package manager , it will manage all the packages that we install in the system , sometime packages are also known as dependencies 
+
+
+
+Package.json is basically a configuration for our NPM , it keeps track of all the dependencies , all the packages our code is using 
+
+package-lock.json keep a track of exact version of all the tansitive and all the  dependencies that is being installed , package.json keeps track of approx version of dependencies .
+
+Parcel comes as a node package , we will install that package , Parcel is a bundler .
+
+npm install dependencyname   
+
+
+node modules contains all the  code that we fetch from npm . pacakge.json is a configuration  for our npm , whereas node modules is kind of database  , it conatins the actual data of that dependencies , of those packages that our projects needs .
+NODE MODULES  basically fetches all the code of all the dependencies into our system 
+
+Transitive dependencies :-   
+
+
+
+we put package.json and package-lock.json on git but not node modules 
+ because package.json and package-lock.json 
+ maintains a node of what all dependencies our project needs . so if i havve package , packagelock i can regenerate my node modules . i just need to enter command npm install .
+
+ whatever we can regnerate dont put it on git . git should only have essential things . if i can regenearte my node modules on the server i dont want to   put it up on github
+
+
+
+ React makes our app fast but react is not the only thing that makes our app fast , there are so many things like parcel and many libaries to make our app fast ,
+
+
+
+-26 pe dist folder and parcel-cache k baare me bataya huaa hai dekh lo 
