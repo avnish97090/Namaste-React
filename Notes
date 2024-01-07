@@ -38,3 +38,51 @@ we put package.json and package-lock.json on git but not node modules
 
 
 -26 pe dist folder and parcel-cache k baare me bataya huaa hai dekh lo 
+
+
+
+
+// React.createElement =>ReactElement =>  Object  => HTMLElement(render)
+
+
+JSX  is a javascript syntx which is easier to create react element 
+
+
+
+JSX (transpiled before it reaches the JS) - PARCEL - Babel 
+
+Babel job is to transpile / convert jsx  to react code so that browser can understand
+
+
+JSX=> Babel transpiles it to React.createElement => ReactElement -> JS Object => HTMLElement(render)
+React element is rendered as an html element to the browser 
+
+
+BABEL is a  some piece of  javascript code , its a javascript library , its a node library , npm package , whic takes a piece of code , reads that code  and convert that into something else , and it convert different type of code into different  type of code 
+
+
+IF we have to give attribute to JSX we have to use camelcase , ex className 
+
+in html we use as class but in jsx we use as className
+
+
+JSX is a react element , so we can also say that functional component is a function which return a react element .
+
+
+const jsxfile = <h1 id = "heading" className="head"> its is a jsx file </h1>   its a react element 
+
+
+const jsxfile2 = (<h1 id = "heading2" className="head1"> 
+its is a jsx file2 </h1>);  // for mutiple line we wrap up jsx into ()
+
+
+
+root.render(<Headingcomponent2  />);  this how we render functional component , this is how bable understand 
+ root.render(jsxfile2);  this is how we renderrr the react element 
+
+
+
+COMPONENT COMPOSITION :- component k under component is called component composition 
+
+
+JSX sanitize the data , whatever the data is coming then pass it , it prevents cross site scripting  attack for me. 
