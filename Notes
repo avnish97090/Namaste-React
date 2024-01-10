@@ -86,3 +86,99 @@ COMPONENT COMPOSITION :- component k under component is called component composi
 
 
 JSX sanitize the data , whatever the data is coming then pass it , it prevents cross site scripting  attack for me. 
+
+
+Properties is something which we can pass to the components . let we want to dynamically pass data to some component  , we can pass it as props .
+
+
+Restaurant card is functional component and functional component is just normal javascript function at the end of the day . Similarly props at the end of the day are just normal arguments to our function 
+
+
+Passing a prop to a component is just like 
+PASSING a argument to a function .
+
+
+const Restaurantcarad = () =>{
+    return ( 
+        <div className = "res-card style ={{background : "#f0f0f0"}}>
+ <img 
+  className ='res-logo"
+  alt= "res-logo"
+  src="    "/>
+  <h3>Meghana foods </h3>
+  <h4>Briyanai , North Indian ,Asian </h4>
+  <h4> 38 minutes </h4>
+  </div>
+  
+
+
+    );
+};
+
+const body =() => {
+    return (
+        <div className = "res-conatiner">
+        < RestaurantCard resName = "Meghana Foods" , cuisine ="Briyani, NorthINdian , /> // THIS IS KNOWN AS PASSING PROPS TO A COMPONENT .
+
+
+ 
+    )
+
+}
+
+React will basically take all these properties  and it will wrap it inside a object and it will pass it over here as a props . const RestaurantCard = (props) => {
+this props will be an object now .
+console.log(props); 
+ }      
+
+
+destructuring on the  fly m bhi yahi hota hai ki , react is wrapping this inside a object and it is passing to that function . 
+aisey const RestaurantCard = ({resname , cuisine}) =>{
+    
+}
+
+
+
+ <div className="res-container">
+      {
+        resList.map(restaurant => <RestaurantCard   resData = {restaurant}/>)
+      }    //  inside my res container  i have looped over my reslist and i am doing .map  for each restaurant  i am returning a piece of jsx 
+
+
+
+
+when react was built  it was built with the fundamental  that in javascript only  we will kind of  build our markup as well as  logic  earlier we use to have our html file   different for markup  and different javascript file for logic  now we can run loops  in jsx  inside our  javascript file  and we can put in  markup  parsing classname , div , id ,  properties , h1 tag  , everything we can do  in the same place 
+
+
+when new restaurant card came in inside res conatiner it will rerender all the restaurantcard  because react doesnot know which restaurant card is new  , at which place new restaurant card should place  at first place or second place , it will treat all the  restaurant card is same , but if we give all of them a unique id  then react will  exactly know wheree it should place new card , now it will not rerender all the restaurant card ,   it will just render only restaurant  , this is highly optimization ,  so whenever we do a map , make a habit to give a unquie key ,  some people also uses indexes as key , 
+
+{reslist.map(restaurant , index )=> <RestaurenCard key = {index} resData = {restaurant}/>}
+
+but react says not to use index as key , if there is nothing available then use index as key ,
+
+
+
+
+
+
+
+HOOKS ARE NOTHING BUT NORMAL JAVASCRIPT UTILITY FUNCTION 
+
+HOOKS  are nothing but normal javascript function which react gives to us . it has its own specific use case  where we use this function 
+EPISODE 5 
+last k 30 min m sara definition diya hua hai 
+React is only good at DOM manipulation , DOM operation .REACT IS fast becuse it does efficient dom manipulation , because it has VIRTUAL DOM .  IT keeps  our data layer in sync with the UI layer. 
+
+RECONCILIATION ALGORITHM (also known as react fibre ) :-
+
+
+VIRTUAL DOM :-
+
+
+DIFF ALGORITHM :-
+
+
+
+whenever there is a change in any state variable , react will find out the difference between the virtual dom and it will rerender tour component , it will update the dom . it will update the UI .
+
+-4 se -3 k bich ek line bahut aachaa sir boley hain SETlistofrestaurat k baare me dekh lo . 
