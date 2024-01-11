@@ -126,6 +126,8 @@ const body =() => {
 
 }
 
+config driven ui is like the UI is driven by the config which is sent by the backend 
+
 React will basically take all these properties  and it will wrap it inside a object and it will pass it over here as a props . const RestaurantCard = (props) => {
 this props will be an object now .
 console.log(props); 
@@ -158,15 +160,99 @@ but react says not to use index as key , if there is nothing available then use 
 
 
 
+                                      LECTURE 5 NOTES 
+
+TWO TYPES OF Export / Import 
+
+
+
+-Default Export/Import 
+
+export default Component ;
+import Component from "path" ;
+
+- Named Export/Import 
+export const Component 
+import {Component}  from "path" ;
+
+
+in this button i will pass an attribue onclick and that attribute will take a callback function ,
+  <button className="filter-btn" onClick={ () =>{
+                console.log("buttonn clicked ")
+                }
+                  } >Top Rated Restaurants</button>
+
+ <button className="filter-btn" onClick={ () =>{
+                listOfRestaurant = listOfRestaurants.filter (
+                    (res)=> res.data.avgRating>4
+                );
+                }
+                  } >Top Rated Restaurants</button>
+
+     so when we filter the restaurant list by onclick event on the most searched restaurant , the updated list  shows on the console but it doesnot shows on UI , UI pe sara ka sara restaurant rahtaa haai , 
+     this is where   react comes into picture , it keeps data and the UI layer   consistent with each other , sync with each other , tied with each other , this is where react comes into picture , all the other frame work are trying to solve this , 
+
+
+
+WHEN WE SAY REACT IS FAST , it is faster in dom manipulation , it is  efficient in dom  manipulation        
+
+
+
+
+
+IN JAVASCRIPT WE DEFINE VARIABLE IN REACT WE DEFINE STATE VARIABLE 
 
 
 
 
 HOOKS ARE NOTHING BUT NORMAL JAVASCRIPT UTILITY FUNCTION 
 
-HOOKS  are nothing but normal javascript function which react gives to us . it has its own specific use case  where we use this function 
+HOOKS  are nothing but normal javascript utility  function which react gives to us .ITS A pre built,the only thing is this function comes with some superpower , this function has some logic written behind the secne inside react ,that function is a utility function given by react  to us ,   its own specific use case  where we use this function 
+
+jab hum react ko import kartey hain usi k sath sara aa jataa haai hooks , 
+
+
+
+useEffect()  :- it is used to generate  superpowerful STATE varaible , it gives superpowerful react variable , it is called state variable because it maintains the state of our app , maintians the state of component . and the scope of state varaibale is inside that component .
+
+
+
+const [listOfRestaurants] = useState();
+what happens is when we call the useState(); it will give you a state variabble  and how we recive that state variable like this inside an array  const [listOfRestaurants];
+=>  const [listOfRestaurants] = useState();
+now this listOfRestaurants is a list of variable which is superpowerful react variable .
+
+
+            state variable 
+=>  const [listOfRestaurants] = useState();
+this is exactly like 
+
+Normal js variable 
+let listOfRestaurants ;
+
+
+suppose we give js variable an empty array 
+we gave the default value  of this listOfRestaurant as empty array initially , 
+let listOfRestaurants = [] ;
+similarlly we pass  default value at here useState([]); 
+so whatever we pass here  [] becomes the default value of the state  variable  . 
+
+
+and we use state variable normally in code , like we do in js ,     
+
+
+if i have to modify state variable , we modify it by a function , and the function comes as the second parameterin the array  
+
+
+=>  const [listOfRestaurants, setListOfRestaurant] = useState();
+
+
+
 EPISODE 5 
 last k 30 min m sara definition diya hua hai 
+
+
+
 React is only good at DOM manipulation , DOM operation .REACT IS fast becuse it does efficient dom manipulation , because it has VIRTUAL DOM .  IT keeps  our data layer in sync with the UI layer. 
 
 RECONCILIATION ALGORITHM (also known as react fibre ) :-
