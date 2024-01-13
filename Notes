@@ -213,7 +213,7 @@ jab hum react ko import kartey hain usi k sath sara aa jataa haai hooks ,
 
 
 
-useEffect()  :- it is used to generate  superpowerful STATE varaible , it gives superpowerful react variable , it is called state variable because it maintains the state of our app , maintians the state of component . and the scope of state varaibale is inside that component .
+useState()  :- it is used to generate  superpowerful STATE varaible , it gives superpowerful react variable , it is called state variable because it maintains the state of our app , maintians the state of component . and the scope of state varaibale is inside that component .
 
 
 
@@ -268,3 +268,20 @@ DIFF ALGORITHM :-
 whenever there is a change in any state variable , react will find out the difference between the virtual dom and it will rerender tour component , it will update the dom . it will update the UI .
 
 -4 se -3 k bich ek line bahut aachaa sir boley hain SETlistofrestaurat k baare me dekh lo . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+whenever we change a local state variable react rerenders the  component 
+
+
+virtual dom is object representation of  jsx, actual dom 
