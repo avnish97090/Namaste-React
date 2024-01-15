@@ -1,0 +1,11 @@
+cors k toggle me galti kar rahe the , 
+
+api fetch me , aachey se api dekho , 
+
+ek aacount se nahi miley to dusare account se dekho 
+
+. map me hum list of restaurants pe lagana tha ,  hum filteredlistofrestaurant  pe bina state varaiable ko banaaye lagaa raahe thee 
+
+aachey se file ko save kiye banaa cahalaa raahe thee , 
+
+link me hum  l small dey rahe the jabki Link to =  " /about " aisey kar k hogaa 
