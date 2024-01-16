@@ -9,3 +9,30 @@ ek aacount se nahi miley to dusare account se dekho
 aachey se file ko save kiye banaa cahalaa raahe thee , 
 
 link me hum  l small dey rahe the jabki Link to =  " /about " aisey kar k hogaa 
+
+
+/restaurant/ 123 kar rahe the dynamic routing k time jabki /restaurants/123 hota kyonki path m hi hum aisa diye hue hain 
+
+
+applayout ke children m dalna tha restaurantid path ko , hum children m nhi daley the jissey header hi gayaab ho jaa raha thaa 
+
+
+7th lecture me jab hum destructure karte  hain to name show nahi hota hai , kyonki pahley hi hum pahley destructure kar rahe the baad me shimmer ko bula rahe the 
+jisssey hum jo suru m null set kiye hue hain shimmer ui ko , to null se desturcure ho raha thaa , 
+
+
+
+
+  {item.card.info.name} -Rs{(item.card.info.price)/100}
+Rs kaisey dengey ye doondh rahe thee 
+
+
+
+
+
+
+ if (resInfo===null) return<Shimmer/> ; ismey shimmmer aa raha hai 
+
+ if (resInfo===null) return
+ <Shimmer/> ;   aisey m  nahi aa rhaaa hai 
+
