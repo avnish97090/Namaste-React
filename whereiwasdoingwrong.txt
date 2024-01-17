@@ -36,3 +36,6 @@ Rs kaisey dengey ye doondh rahe thee
  if (resInfo===null) return
  <Shimmer/> ;   aisey m  nahi aa rhaaa hai 
 
+
+ jab bhi unable to fetch aaye to dekho cors m sahi hai ya naahi , dusraa account nahi use kar liya hai 
+
