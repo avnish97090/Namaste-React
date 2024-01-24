@@ -127,3 +127,10 @@ const Body = () => {
 
 
   export default Body ;
+
+
+
+
+  // console.log(resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards) ; 
+// ismey 24 hai , veg , recommenned , aur srae , ismey @type me findDOMNode.v2.itemcategory hai //
+// 0 m veg only 1  k  itemcard me hai array 4 item ka , 1 ka title hai recommended 

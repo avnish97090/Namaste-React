@@ -291,3 +291,15 @@ whenever we change a local state variable react rerenders the  component
 
 
 virtual dom is object representation of  jsx, actual dom 
+
+
+     
+             <RestaurantCategory data = {category?.card?.card}/> ye props pass kiye 
+             ab recive hum yahan kiye  aisey  as a object jab data likhey to 
+const RestaurantCategory = ({data}) =>{
+  console.log(data);
+
+   return  (
+<div>ResCategory </div>
+    )
+}

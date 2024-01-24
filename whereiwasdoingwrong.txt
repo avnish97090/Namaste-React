@@ -39,3 +39,17 @@ Rs kaisey dengey ye doondh rahe thee
 
  jab bhi unable to fetch aaye to dekho cors m sahi hai ya naahi , dusraa account nahi use kar liya hai 
 
+
+  categories.map((category) => {
+                  return  <RestaurantCategory/>
+                }) 
+            map m agar 2 line me likh rahe to retun kaaroo 
+
+
+            ek line me likh rahe to { } ye mat lagao 
+            
+ 
+categories.map((category) => 
+                  return  <RestaurantCategory/>
+                ) 
+
