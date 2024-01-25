@@ -50,7 +50,7 @@ const categorey = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
     c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory"
   );
 
-console.log(categorey);
+// console.log(categorey);  
 
 return (
   <div className="text-center">
